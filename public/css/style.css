@@ -1,0 +1,325 @@
+body {
+	width: auto;
+}
+
+#titleText, #homeNav, #subNav, #navCopy{
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+}
+
+#description{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter; 
+	text-transform: uppercase;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a#pageLink {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;	
+}
+
+a:hover, #hoverOver a:hover{
+	color: dimgray;
+}
+
+#hoverOver {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 10000000;
+	padding: 10px;
+	background-color: rgba(255,255,255,.5);
+}
+#hoverOver a {
+	color: rgba(0,0,0,.9);
+}
+
+em{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bolder; 
+	text-transform: uppercase;
+	color: white;
+}
+/*STARTING TO TRY PARALLAX
+
+#heading{
+	position: fixed;
+}
+*/
+
+article img#Background{
+	background-image: "images/wooden.jpg";
+	background-color: #cccccc;
+	padding: 0px;
+	margin: 0px;
+    width: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+article img#coffeeLogo{
+	position: absolute;
+	width: 100%;
+	min-width: 100px;
+	left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+	z-index: 2;
+	overflow: hidden;
+}
+
+nav ul li{
+	text-transform: uppercase;
+	list-style-type: none;
+	text-align: center;
+	display: inline-block;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 18px;
+	padding-top: 0px;
+}
+
+nav ul{
+	text-align: center;
+	margin: 0px;
+}
+
+/*START ARTICLES*/
+#homeNav, #navCopy {
+	background-color: #ffffff;
+	width: 100%;
+}
+
+#navCopy {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99999999;
+	display: none;
+}
+
+#topPicks{
+	padding-bottom: 25%;
+}
+
+#topPicks, #allShops, #merchandise, #about{
+	background-color: #ffffff;
+	width: 100%;
+	overflow: hidden;
+}
+
+#topPicks h1#titleText, #about h1#titleText{
+	text-align: center;
+	font-size: 30px;
+	margin-right: 30%;
+	margin-left: 30%;
+}
+
+/*Allows text to wrap on descriptions*/
+#storeDesc p, #storeDesc a, #storeDesc h2, #merchandise h2, #merchandise a, #about p{
+	overflow-wrap: normal;
+	width: 90%;
+}
+
+#storeDesc, #aboutDesc {
+	float: right;
+	padding: 0px 2% 5% 2%;
+	width: 27%;
+}
+
+#storeImage, #aboutImage {
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+	position: absolute;
+	width: 66%;
+}
+
+#storeImage img, #aboutImage img{
+	width: 100%;
+}
+
+/*ALL SHOPS*/
+#allShops{
+	position: relative;
+}
+
+#allShops #titleText{
+	text-align: center;
+	font-size: 50px;
+	margin-top: 25%;
+	margin-left: 35%;
+	margin-right: 35%;
+	position: relative;
+	z-index: 10;
+	padding: 0px;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+#allShops p{
+	text-align: center;
+	font-size: 15px;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 0px;
+	margin-bottom: 25%;
+	position: relative;
+	z-index: 10;
+	padding: 0px;
+	color: white;
+}
+
+#allShops #fig1, #allShops #fig2, #allShops #fig3, #allShops #fig4, #allShops #fig5{
+	background-position: center bottom;
+    background-repeat: no-repeat;
+	width: 20%;
+	height: 100%;
+	float: left bottom;
+	margin: 0px;
+	padding: 0px;
+   	background-color: #fff;
+   	position: absolute;
+   	display: block;
+   	overflow: hidden;
+   	top: 0;
+}
+
+#allShops #fig1 img, #allShops #fig2 img, #allShops #fig3 img, #allShops #fig4 img, #allShops #fig5 img{
+	margin: 0px;
+	padding: 0px;
+   	right: 50%;
+   	opacity: 0.8;
+   	background-color: #fff;
+   	position: relative;
+   	height: 100%;
+   	margin-left: auto;
+    margin-right: auto;
+
+}
+ /*align photo links next to each other*/
+#allShops #fig2{
+	left: 20%;
+}
+#allShops #fig3{
+	left: 40%;
+}
+#allShops #fig4{
+	left: 60%;
+}
+#allShops #fig5{
+	left: 80%;
+}
+
+/*MERCHANDISE*/
+#merchandise{
+	width: 100%;
+	background-color: #fff;
+}
+
+#merchandise #shopDesc {
+	float: left;
+	padding: 15% 0px 10% 0px;
+	width: 35%;
+}
+#merchandise #shopDesc #titleText{
+	font-size: 30px;
+}
+
+#merchandise #shopDesc #titleText, #merchandise #shopDesc #pageLink{
+	text-align: center;
+	overflow-wrap: break-word;
+	width: 100%;
+}
+#merchandise #shopDesc #pageLink{
+	padding-left: 33%;
+}
+
+#merchandise #shopPics {
+	float: right;
+	width: 50%;
+	position: relative;
+}
+#merchandise #shopPics img{
+	outline: 2px solid black;
+}
+
+#merchandise #shopPics #row1, #merchandise #shopPics #row2{
+	position: relative;
+   	background-color: #fff;
+   	overflow: hidden;
+   	margin: 0px;
+   	top: 0;
+   	left: 0;
+}
+
+#merchandise #shopPics img{
+	margin: 4%;
+	width: 30%;
+   	background-color: #fff;
+   	height: 100%;
+}
+
+/*ABOUT*/
+#about{
+	padding-bottom: 20%;
+}
+#about #description {
+	line-height: 150%;
+}
+
+footer {
+	background-color: black;
+	width: 100%;
+	height: 10%;
+	background-attachment: fixed;
+    background-position: center;
+    bottom:0;
+    bottom: 0;
+    padding-top: 1%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter; 
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+
+#social {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter; 
+	text-transform: uppercase;
+	color: white;
+	list-style-type: none;
+	width: 100%;
+	padding-left: 1em;
+	padding-right: 0px;
+}
+
+/*overrides a from earlier*/
+#social a{
+	color: white;
+}
+
+#social li{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}

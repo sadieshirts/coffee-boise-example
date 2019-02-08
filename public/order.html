@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link href="css/subStyle.css" type="text/css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<title>Coffee Boise - Order</title>
+	</head>
+	<body>
+<!-- 		<nav id="subNav">
+			<a href="index.html"><img src="images/coffeeLogoNav.png" alt="CoffeBoise" id="navLogo"></a>
+			<ul>
+				<li><a href="topPicks.html">top picks</a></li>
+				<li><a href="allShops.html">all shops</a></li>
+				<li><a href="merchandise.html">merchandise</a></li>
+				<li><a href="index.html#about">about</a></li>
+			</ul>
+		</nav> -->
+		<?php include("phpincludes/subNav.php"); ?>
+		<article id="merchandise">
+			<h1 id="titleText"> Order </h1>
+		</article>
+
+		<section id="orderForm">
+			<figure id="orderImage">
+				<img src="images/merch/mug1.jpg" alt="mug1">
+			</figure>
+			<section id="productDesc">
+				<h2 id="titleText"> Coffee Boise Mug </h2>
+				<p id="description">$15 </p>
+				<p id="description">(Just getting an idea of what this would look like. I figured php would allow me to make product pages faster.)</p>
+				<label for="username">Quantity:</label>
+				<input id="textField" type="number" name="quantity" placeholder="value" required="" min="0"><br>
+				<input id="button" type="submit" name="submit" value="PURCHASE">
+			</section>
+		</section>	
+		
+		<footer>
+			<ul id="social">
+				<li><strong>CONTACT US</strong></li>
+				<li><a href="">facebook.com/coffeeboise</a></li>
+				<li><a href="">hello@coffeeboise.com</a></li>
+				<li><a href="">@coffee_boise</a></li>
+			</ul>
+			<p id="copy">&copy Sadie Shirts</p>
+		</footer>
+	</body>
+</html>

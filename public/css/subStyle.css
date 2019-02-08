@@ -1,0 +1,394 @@
+body {
+	width: auto;
+}
+
+#currentpage{
+	text-shadow: 2px 2px 5px gray;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+}
+
+#titleText, #subNav, .merchCaption{
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+}
+
+#description, figcaption#price{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter; 
+	text-transform: uppercase;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover img, form input:hover{
+	opacity: 0.7;
+}
+
+a#pageLink {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;	
+}
+
+a:hover{
+	color: dimgray;
+}
+
+label, .error, .order_success{
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.order_success{
+	padding-left: 45%;
+	padding-bottom: 20%;
+	text-align: center;
+}
+
+.error {
+	color: red;
+}
+
+.loginForm {
+	padding-left: 20%;
+	padding-right: 20%;
+	position: relative;
+}
+
+.loginForm button {
+	padding-right: 22%;
+	padding-left: 22%;
+	position: absolute;
+}
+.loginForm #newUser{
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.loginForm .loginValues{
+	padding-left: 40%;
+	padding-right: 40%;
+}
+/*.loginForm .loginValues #fields{
+	background-color: black;
+}experimenting with form layout*/
+
+em{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bolder; 
+	text-transform: uppercase;
+	color: white;
+}
+
+nav ul li{
+	text-transform: uppercase;
+	list-style-type: none;
+	text-align: center;
+	display: inline-block;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 18px;
+	padding-top: 0px;
+}
+
+nav ul{
+	text-align: center;
+	margin: 0px;
+}
+.merchCaption{
+	font-size: 25px;
+}
+figcaption#price{
+	font-size: 20px;
+}
+#subNav{
+	background-color: rgba(235,233,232, 0.95);
+	padding-bottom: 1%;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99999999;
+	box-shadow: 0px -20px 30px;  
+}
+
+#subNav ul{
+	padding-top: 1%;
+}
+
+#subNav #navLogo{
+ 	width: 5%;
+ 	padding-left: 10%;
+ 	padding-right: 10%;
+ 	margin: 0px;
+ 	float: left;
+ 	position: relative;
+ 	padding-top: 0.5%;
+ }
+
+
+/*STARTING TO TRY PARALLAX
+
+#heading{
+	position: fixed;
+}
+*/
+/*START ARTICLES*/
+
+#topPicks{
+	/*padding-bottom: 25%;*/
+}
+
+#topPicks{
+	width: 100%;
+	/*overflow: hidden;*/
+}
+
+#titleText{
+
+}
+
+#topPicks h1#titleText, #allShops #titleText, #merchandise h1#titleText{
+	padding-top: 5%;
+	text-align: center;
+	font-size: 30px;
+	margin-right: 30%;
+	margin-left: 30%;
+}
+#topPicks h2#titleText{
+	text-align: center;
+	font-size: 30px;
+	margin-right: 30%;
+	margin-left: 30%;
+}
+
+#storeDesc p, #storeDesc a, #storeDesc h2{
+	overflow-wrap: normal;
+	width: 90%;
+}
+
+#topPicks{
+	width: 100%;
+}
+
+#topPicks #storeImage {
+	width: 100%;
+    top: 0;
+    /*display: block;*/
+}
+#topPicks #storeImage img{
+	width: 50%;
+	left: 25%;
+	position: relative;
+}
+
+#bodyText p{
+	padding-right: 15%;
+	padding-left: 15%;
+	column-fill: balance;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 120%;
+	column-count: 2;
+	padding-bottom: 7%;
+	text-align: justify;
+    -moz-text-align-last: right; /* Code for Firefox */
+    text-align-last: right;
+	overflow-wrap: break-word;
+}
+
+#merchandise, #allShopsGrid{
+	width: 100%;
+	background-color: #fff;
+	z-index: 10000;
+}
+
+#merchandise #shopDesc #titleText, #allShopsGrid #shopDesc #titleText{
+	font-size: 30px;
+}
+
+#merchandise #shopPics input, #allShopsGrid #shopPics img, #orderImage img{
+	outline: 1px solid black;
+}
+
+#merchandise #shopPics, #allShopsGrid #shopPics{
+	overflow: hidden;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-bottom: 5%;
+
+}
+
+#merchandise #shopPics #grid, #allShopsGrid #shopPics #grid{
+	width: calc(100% / 4);
+	flex-direction: row;
+}
+
+
+#merchandise #shopPics #grid input, #allShopsGrid #shopPics #grid img{
+	max-width: 100%;
+	display: block;
+}
+
+#orderForm{
+	width: 100%;
+	padding-bottom: 15%;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#orderForm #orderImage {
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+	position: absolute;
+	width: 50%;
+}
+
+#orderForm #orderImage img{
+	width: 50%;
+	margin-left: 25%;
+}
+
+#productDesc p, #productDesc h2{
+	overflow-wrap: normal;
+	width: 90%;
+}
+
+#orderForm #productDesc{
+	padding: 0px 2% 5% 2%;
+	width: 50%;
+	top: 0;
+	left: 50%;
+	float: right;
+}
+#orderForm #productDesc #titleText{
+	font-size: 30px;
+	left: 0;
+}
+
+#textField{
+	margin-top: 5%;
+}
+#submit {
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5px;
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+#button {
+	margin-top: 5%;
+    border: 0;
+    background: rgb(235,233,232);
+    padding: 11px 30px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#button:hover {
+    background: darkgray;
+}
+
+#hiddenSize {
+	display: none;
+}
+
+/*#showSize {
+
+}*/
+
+
+footer {
+	background-color: black;
+	width: 100%;
+	height: 10%;
+	background-attachment: fixed;
+    background-position: center;
+    bottom:0;
+    bottom: 0;
+    padding-top: 1%;
+    padding-left: 0px;
+}
+
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter; 
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+
+#social {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter; 
+	text-transform: uppercase;
+	color: white;
+	list-style-type: none;
+	width: 100%;
+	padding-left: 1em;
+	padding-right: 0px;
+}
+
+#cart {
+	background-color: #ffffff;
+	width: 100%;
+	overflow: hidden;	
+}
+
+#merchDesc p{
+	overflow-wrap: normal;
+	width: 90%;
+}
+
+#cart #merchDesc{
+	float: right;
+	width: 50%;
+}
+
+#cart #cartImage {
+	float: left;
+	margin-left: 20%;
+	margin-right: 2%;
+	position: absolute;
+	width: 15%;
+}
+#cart{
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+#cartImage img {
+	width: 100%;
+	padding: 0px;
+
+}
+
+.orderForm#purchaseForm {
+	padding-left: 42%;
+	padding-bottom: 2%;
+}
+
+/*overrides a from earlier*/
+#social a{
+	color: white;
+}
+
+#social li{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
